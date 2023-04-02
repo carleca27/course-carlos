@@ -1,0 +1,5 @@
+Crea una página en la que tendrás un campo tipo textarea y un botón. Cuando el usuario pulse el botón, combinando varias de las operaciones anteriores,tienes que mostrar la siguiente información: 
+- Número de vocales que aparecen 
+- Total de caracteres introducidos 
+- Porcentaje de vocales respecto al total de caracteres. 
+- Las 3 palabras más repetidas en texto.
