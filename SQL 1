@@ -1,0 +1,33 @@
+-- Ésto sería todo lo que he creado en SQL. No sé si es así como querías que te lo pasara. Tú ya me dices. De momento, ésto ha estado fácil, creo.
+
+create database pruebas;
+use pruebas;
+
+create user 'tester'@'%';
+grant all privileges on pruebas to 'tester'@'%';
+
+create table member (
+	first_name varchar(255),
+    last_name varchar(255),
+    email varchar(70),
+    age smallint
+);
+
+create table products (
+	name varchar(255),
+    price int
+);
+
+insert into member (first_name, last_name, email, age ) values ('Roger', 'Rabbit', 'roger@rabbits.net', 15);
+insert into member (first_name, last_name, email, age ) values ('Janis', 'Joplin', 'janis@rocker.com', 24);
+insert into member (first_name, last_name, email, age ) values ('Amadeus', 'Mozart', 'mozart@composers.com', 43);
+insert into member (first_name, last_name, email, age ) values ('Roger', 'Waters', 'roger@pinkfloid.uk	', 65);
+
+insert into products (name, price) values ('Rodamiento 1', 150);
+insert into products (name, price) values ('Rodamiento 2', 250);
+insert into products (name, price) values ('Caja tuercas 6 pulg.', 35);
+insert into products (name, price) values ('Caja arandelas 6 pulg.', 40);
+
+select * from member where age < 30;
+
+select * from products where name like '%miento%';
